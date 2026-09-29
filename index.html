@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online Games - Play Anytime, Anywhere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎮 GameHub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to GameHub</h1>
+            <p>Play Free Online Games - No Downloads, No Registration</p>
+            <button class="btn-primary" onclick="document.getElementById('games').scrollIntoView({behavior: 'smooth'})">Play Now</button>
+        </div>
+    </section>
+
+    <section id="games" class="games-section">
+        <div class="container">
+            <h2>Choose Your Game</h2>
+            <div class="games-grid">
+                <div class="game-card" onclick="openGame('tictactoe')">
+                    <div class="game-icon">⭕</div>
+                    <h3>Tic Tac Toe</h3>
+                    <p>Classic strategy game</p>
+                </div>
+                <div class="game-card" onclick="openGame('snake')">
+                    <div class="game-icon">🐍</div>
+                    <h3>Snake Game</h3>
+                    <p>Retro arcade classic</p>
+                </div>
+                <div class="game-card" onclick="openGame('memory')">
+                    <div class="game-icon">🧠</div>
+                    <h3>Memory Match</h3>
+                    <p>Test your memory</p>
+                </div>
+                <div class="game-card" onclick="openGame('flappybird')">
+                    <div class="game-icon">🐦</div>
+                    <h3>Flappy Bird</h3>
+                    <p>Tap to fly</p>
+                </div>
+                <div class="game-card" onclick="openGame('2048')">
+                    <div class="game-icon">🎯</div>
+                    <h3>2048</h3>
+                    <p>Merge numbers game</p>
+                </div>
+                <div class="game-card" onclick="openGame('rockpaper')">
+                    <div class="game-icon">✋</div>
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Beat the computer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="game-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeGame()">&times;</span>
+            <div id="game-container"></div>
+        </div>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About GameHub</h2>
+            <p>GameHub is your ultimate destination for free online gaming. Enjoy a variety of games from classic arcade favorites to modern puzzle games. All games are:
+            </p>
+            <ul>
+                <li>✓ Completely Free</li>
+                <li>✓ No Downloads Required</li>
+                <li>✓ No Registration Needed</li>
+                <li>✓ Play on Any Device</li>
+                <li>✓ Ad-Free Experience</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GameHub. All rights reserved. Have fun playing!</p>
+        </div>
+    </footer>
+
+    <script src="games.js"></script>
+</body>
+</html>
