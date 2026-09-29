@@ -1,111 +1,98 @@
-# GameHub - Free Online Games Website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub2026A | Free Online Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎮 GameHub2026A</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-🎮 Welcome to GameHub, your ultimate destination for free online gaming!
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to GameHub2026A</h1>
+            <p>Play Free Online Games - No Downloads, No Registration</p>
+            <button class="btn-primary" onclick="document.getElementById('games').scrollIntoView({behavior: 'smooth'})">Play Now</button>
+        </div>
+    </section>
 
-## Features
+    <section id="games" class="games-section">
+        <div class="container">
+            <h2>Choose Your Game</h2>
+            <div class="games-grid">
+                <div class="game-card" onclick="openGame('tictactoe')">
+                    <div class="game-icon">⭕</div>
+                    <h3>Tic Tac Toe</h3>
+                    <p>Classic strategy game</p>
+                </div>
+                <div class="game-card" onclick="openGame('snake')">
+                    <div class="game-icon">🐍</div>
+                    <h3>Snake Game</h3>
+                    <p>Retro arcade classic</p>
+                </div>
+                <div class="game-card" onclick="openGame('memory')">
+                    <div class="game-icon">🧠</div>
+                    <h3>Memory Match</h3>
+                    <p>Test your memory</p>
+                </div>
+                <div class="game-card" onclick="openGame('flappybird')">
+                    <div class="game-icon">🐦</div>
+                    <h3>Flappy Bird</h3>
+                    <p>Tap to fly</p>
+                </div>
+                <div class="game-card" onclick="openGame('2048')">
+                    <div class="game-icon">🎯</div>
+                    <h3>2048</h3>
+                    <p>Merge numbers game</p>
+                </div>
+                <div class="game-card" onclick="openGame('rockpaper')">
+                    <div class="game-icon">✋</div>
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Beat the computer</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-✨ **6 Exciting Games:**
-- **Tic Tac Toe** - Play the classic strategy game against the computer
-- **Snake Game** - The retro arcade classic with addictive gameplay
-- **Memory Match** - Test and improve your memory skills
-- **Flappy Bird** - Navigate through pipes with precision timing
-- **2048** - Merge tiles to reach the 2048 tile
-- **Rock Paper Scissors** - Beat the computer in this classic game
+    <div id="game-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeGame()">&times;</span>
+            <div id="game-container"></div>
+        </div>
+    </div>
 
-🌟 **Why Choose GameHub?**
-- ✅ Completely Free - No hidden charges
-- ✅ No Downloads Required - Play directly in your browser
-- ✅ No Registration Needed - Start playing instantly
-- ✅ Play on Any Device - Desktop, tablet, or mobile
-- ✅ Ad-Free Experience - Pure gaming fun
-- ✅ Responsive Design - Works perfectly on all screen sizes
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About GameHub2026A</h2>
+            <p>GameHub2026A is your ultimate destination for free online gaming. Enjoy a variety of games from classic arcade favorites to modern puzzle games. All games are:
+            </p>
+            <ul>
+                <li>✓ Completely Free</li>
+                <li>✓ No Downloads Required</li>
+                <li>✓ No Registration Needed</li>
+                <li>✓ Play on Any Device</li>
+                <li>✓ Ad-Free Experience</li>
+            </ul>
+        </div>
+    </section>
 
-## How to Play
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 GameHub2026A. All rights reserved. Have fun playing!</p>
+        </div>
+    </footer>
 
-1. Visit the website
-2. Browse the available games
-3. Click on any game card to start playing
-4. Follow the in-game instructions
-5. Close the game modal when finished
-
-## Game Instructions
-
-### Tic Tac Toe
-- Click on empty squares to place your X
-- Beat the computer's O
-- Try to get three in a row
-
-### Snake Game
-- Use arrow keys to move the snake
-- Eat the red food to grow
-- Avoid hitting walls or yourself
-- Click "Start" to begin
-
-### Memory Match
-- Click tiles to reveal symbols
-- Match pairs of identical symbols
-- Lower move count = better score
-
-### Flappy Bird
-- Click or press SPACE to make the bird flap
-- Avoid the pipes
-- Score points by passing through gaps
-
-### 2048
-- Use arrow keys to move tiles
-- Combine tiles with the same number
-- Reach 2048 to win!
-
-### Rock Paper Scissors
-- Choose your move
-- Play against the computer
-- First to reach any score wins!
-
-## Technologies Used
-
-- **HTML5** - Website structure
-- **CSS3** - Beautiful styling and animations
-- **Vanilla JavaScript** - Game logic and interactivity
-- **Canvas API** - For Snake and Flappy Bird games
-
-## File Structure
-
-```
-free-online-games-website/
-├── index.html       # Main HTML file
-├── styles.css       # Styling
-├── games.js         # All game logic
-└── README.md        # This file
-```
-
-## Browser Compatibility
-
-- Chrome (Latest)
-- Firefox (Latest)
-- Safari (Latest)
-- Edge (Latest)
-
-## Future Enhancements
-
-- 🎵 Sound effects and background music
-- 🏆 Leaderboard system
-- 👥 Multiplayer games
-- 🎨 Dark mode theme
-- 📱 Progressive Web App (PWA)
-- ⚡ More games
-
-## Contributing
-
-Feel free to fork this project and submit pull requests for improvements!
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Contact
-
-Have fun playing! If you have suggestions or feedback, feel free to reach out.
-
----
-
-**Happy Gaming! 🎮**
+    <script src="games.js"></script>
+</body>
+</html>
